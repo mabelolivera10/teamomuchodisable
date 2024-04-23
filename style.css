@@ -1,0 +1,34 @@
+/* by encoded mabel 
+linktr.ee/mabelolivera10
+*/
+
+
+body {
+  text-align: center;
+  min-height: 100vh;
+  background: black;
+  color: whitesmoke;
+  display: flex;
+  overflow: hidden;
+}
+h1 {
+  margin: auto;
+  font-family: Gorditas;
+  font-size: 6rem;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  pointer-events: none;
+}
+.td-wrapper,
+canvas {
+  transition: opacity 1s;
+}
+.td-wrapper:not(.td-hide) + canvas,
+.td-hide {
+  opacity: 0;
+}
